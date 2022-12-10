@@ -15,14 +15,15 @@ body {
 }
 
 .card {
-  width: 350px;
+  width: 320px;
   height: 400px;
   margin-left: 20px;
   border-radius: 2px;
   position: relative;
 }
 
-.card::before {
+.card::before,
+.card::after {
   top: 50%;
   left: 50%;
   width: 50%;
@@ -30,18 +31,13 @@ body {
   z-index: -1;
   content: "";
   position: absolute;
+}
+.card::before {
   background-color: white;
   transform: translate(-100%, -50%);
 }
 
 .card::after {
-  content: "";
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 10%;
-  z-index: -1;
-  position: absolute;
   transform: translate(0%, -55%);
   background-color: rgb(76, 115, 223);
 }
@@ -94,17 +90,17 @@ body {
 }
 
 .card__desc__intro {
-  font-weight: 100;
   font-size: 15px;
-  word-break: break-all;
-  text-align: justify;
+  font-weight: 100;
   line-height: 1.2em;
+  text-align: justify;
+  word-break: break-all;
 }
 
 .card_desc__view-more-btn {
-  color: white;
   width: 90px;
   padding: 6px;
+  color: white;
   border-radius: 5px;
   border-color: transparent;
   background-color: rgb(76, 115, 223);
