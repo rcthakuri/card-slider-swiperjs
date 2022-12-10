@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rcthakuri/card-slider-swiperjs/issues"
   },
-  "homepage": "https://github.com/rcthakuri/card-slider-swiperjs#readme"
+  "homepage": "https://github.com/rcthakuri/card-slider-swiperjs#readme",
+  "dependencies": {
+    "swiper": "^8.4.5"
+  }
 }
