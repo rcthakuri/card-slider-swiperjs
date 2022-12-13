@@ -6,75 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Slider - SwiperJs</title>
     <link rel="stylesheet" href="card.css" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules//swiper/swiper-bundle.css"
+    />
+    <script src="../../node_modules/swiper/swiper-bundle.js"></script>
   </head>
   <body>
-    <div class="card-container">
-      <div class="card">
-        <div class="card__avatar-container">
-          <img
-            class="card__avatar-container__avatar"
-            src="../assets/avatar/ramchandra.jpeg"
-          />
+    <div class="swiper card-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-container">
+            <div class="card">
+              <div class="card__avatar-container">
+                <img
+                  class="card__avatar-container__avatar"
+                  src="../assets/avatar/ramchandra.jpeg"
+                />
+              </div>
+              <div class="card__desc">
+                <div class="card__desc__name">Ramchandra Shahi Thakuri</div>
+                <p class="card__desc__intro">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sunt deserunt ipsum maxime vitae, quaerat rerum
+                  necessitatibus ut at et provident nesciunt, enim aspernatur.
+                  Excepturi eveniet ut numquam harum sed!
+                </p>
+                <button
+                  class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card__desc">
-          <div class="card__desc__name">Ramchandra Shahi Thakuri</div>
-          <p class="card__desc__intro">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sunt
-            deserunt ipsum maxime vitae, quaerat rerum necessitatibus ut at et
-            provident nesciunt, enim aspernatur. Excepturi eveniet ut numquam
-            harum sed!
-          </p>
-          <button
-            class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
-          >
-            View More
-          </button>
+        <div class="swiper-slide">
+          <div class="card-container">
+            <div class="card">
+              <div class="card__avatar-container">
+                <img
+                  class="card__avatar-container__avatar"
+                  src="../assets/avatar/anjan.jpeg"
+                />
+              </div>
+              <div class="card__desc">
+                <div class="card__desc__name">Anjan Thapa</div>
+                <p class="card__desc__intro">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sunt deserunt ipsum maxime vitae, quaerat rerum
+                  necessitatibus ut at et provident nesciunt, enim aspernatur.
+                  Excepturi eveniet ut numquam harum sed!
+                </p>
+                <button
+                  class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-container">
+            <div class="card">
+              <div class="card__avatar-container">
+                <img
+                  class="card__avatar-container__avatar"
+                  src="../assets/avatar/bikash.jpeg"
+                />
+              </div>
+              <div class="card__desc">
+                <div class="card__desc__name">Bikash Kunwar</div>
+                <p class="card__desc__intro">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sunt deserunt ipsum maxime vitae, quaerat rerum
+                  necessitatibus ut at et provident nesciunt, enim aspernatur.
+                  Excepturi eveniet ut numquam harum sed!
+                </p>
+                <button
+                  class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card__avatar-container">
-          <img
-            class="card__avatar-container__avatar"
-            src="../assets/avatar/anjan.jpeg"
-          />
-        </div>
-        <div class="card__desc">
-          <div class="card__desc__name">Anjan Thapa</div>
-          <p class="card__desc__intro">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sunt
-            deserunt ipsum maxime vitae, quaerat rerum necessitatibus ut at et
-            provident nesciunt, enim aspernatur. Excepturi eveniet ut numquam
-            harum sed!
-          </p>
-          <button
-            class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
-          >
-            View More
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__avatar-container">
-          <img
-            class="card__avatar-container__avatar"
-            src="../assets/avatar/bikash.jpeg"
-          />
-        </div>
-        <div class="card__desc">
-          <div class="card__desc__name">Bikash Kunwar</div>
-          <p class="card__desc__intro">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sunt
-            deserunt ipsum maxime vitae, quaerat rerum necessitatibus ut at et
-            provident nesciunt, enim aspernatur. Excepturi eveniet ut numquam
-            harum sed!
-          </p>
-          <button
-            class="card_desc__view-more-btn card_desc__view-more-btn_onhover"
-          >
-            View More
-          </button>
-        </div>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+    <script>
+      var swiper = new Swiper(".card-swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
