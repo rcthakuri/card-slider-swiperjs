@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Slider - SwiperJs</title>
-    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="./css/card.css" />
     <link
       rel="stylesheet"
       href="../../node_modules//swiper/swiper-bundle.css"
@@ -98,19 +98,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-    <script>
-      var swiper = new Swiper(".card-swiper", {
-        effect: "cards",
-        grabCursor: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-        },
-      });
-    </script>
+    <script src="js/card-swiper.js"></script>
   </body>
 </html>
